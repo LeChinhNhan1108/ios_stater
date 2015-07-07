@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5213D7541B4C2BEB000B63C7 /* TokenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5213D7531B4C2BEB000B63C7 /* TokenView.xib */; };
 		52289A681B4C1C32008328D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52289A671B4C1C32008328D4 /* AppDelegate.swift */; };
 		52289A6A1B4C1C32008328D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52289A691B4C1C32008328D4 /* ViewController.swift */; };
 		52289A6D1B4C1C32008328D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52289A6B1B4C1C32008328D4 /* Main.storyboard */; };
@@ -28,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		4C50E978029755839D19DA3C /* Pods-ios_stater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_stater.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios_stater/Pods-ios_stater.release.xcconfig"; sourceTree = "<group>"; };
+		5213D7501B4C29BE000B63C7 /* ios_stater-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios_stater-Bridging-Header.h"; sourceTree = "<group>"; };
+		5213D7531B4C2BEB000B63C7 /* TokenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TokenView.xib; sourceTree = "<group>"; };
 		52289A621B4C1C32008328D4 /* ios_stater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_stater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52289A661B4C1C32008328D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52289A671B4C1C32008328D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,10 +98,12 @@
 			children = (
 				52289A671B4C1C32008328D4 /* AppDelegate.swift */,
 				52289A691B4C1C32008328D4 /* ViewController.swift */,
+				5213D7531B4C2BEB000B63C7 /* TokenView.xib */,
 				52289A6B1B4C1C32008328D4 /* Main.storyboard */,
-				52289A6E1B4C1C32008328D4 /* Images.xcassets */,
 				52289A701B4C1C32008328D4 /* LaunchScreen.xib */,
+				52289A6E1B4C1C32008328D4 /* Images.xcassets */,
 				52289A651B4C1C32008328D4 /* Supporting Files */,
+				5213D7501B4C29BE000B63C7 /* ios_stater-Bridging-Header.h */,
 			);
 			path = ios_stater;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			files = (
 				52289A6D1B4C1C32008328D4 /* Main.storyboard in Resources */,
 				52289A721B4C1C32008328D4 /* LaunchScreen.xib in Resources */,
+				5213D7541B4C2BEB000B63C7 /* TokenView.xib in Resources */,
 				52289A6F1B4C1C32008328D4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,10 +406,13 @@
 			baseConfigurationReference = 87AFF5822F1153CA29C08CAF /* Pods-ios_stater.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ios_stater/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ios_stater/ios_stater-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -412,10 +421,12 @@
 			baseConfigurationReference = 4C50E978029755839D19DA3C /* Pods-ios_stater.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ios_stater/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ios_stater/ios_stater-Bridging-Header.h";
 			};
 			name = Release;
 		};
